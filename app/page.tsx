@@ -89,7 +89,7 @@ const solutions: Solution[] = [
   {
     name: "AndesCloud Landing Zone",
     image:
-      "https://images.unsplash.com/photo-1483736762128-d650fdb69e0e?auto=format&fit=crop&w=1200&q=80",
+      "https://images.unsplash.com/photo-1542744173-8e7e53415bb0?auto=format&fit=crop&w=1200&q=80",
     description:
       "Secure landing zone for AWS/Azure/GCP with accounts, network, logging, and security ready for production.",
     specs: [
@@ -647,7 +647,7 @@ export default function HomePage() {
               <div className="space-y-8">
                 <div className="relative h-64 w-full overflow-hidden rounded-3xl border border-slate-800 shadow-2xl">
                   <Image
-                    src="https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&w=1200&q=80"
+                    src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=1200&q=80"
                     alt="Latin America map"
                     fill
                     className="object-cover"
