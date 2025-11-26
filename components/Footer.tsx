@@ -1,4 +1,6 @@
 // components/Footer.tsx
+import Link from "next/link";
+
 export function Footer() {
   return (
     <footer className="border-t border-slate-800 bg-slate-950">
@@ -10,12 +12,12 @@ export function Footer() {
           <p>Lima, Peru · Infrastructure & Cloud Consulting for Latin America</p>
         </div>
         <div className="flex gap-4">
-          <a href="#home" className="hover:text-cyan-300">
+          <Link href="/" className="hover:text-emerald-300">
             Back to top
-          </a>
+          </Link>
           <a
             href="mailto:contact@andesconsulting.com"
-            className="hover:text-cyan-300"
+            className="hover:text-emerald-300"
           >
             contact@andesconsulting.com
           </a>
