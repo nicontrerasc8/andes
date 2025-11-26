@@ -356,14 +356,7 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </motion.a>
-              <motion.a
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                href="#case-studies"
-                className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-900/50 px-8 py-3 font-medium text-slate-300 backdrop-blur-sm transition-colors hover:border-emerald-500/50 hover:text-emerald-400"
-              >
-                View BCP case study
-              </motion.a>
+      
             </div>
           </motion.div>
 
@@ -616,45 +609,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* CASE STUDIES */}
-      <section id="case-studies" className="border-b border-slate-800 bg-slate-950 py-24">
-        <div className="mx-auto max-w-7xl px-6">
-          <SectionHeader
-            title="Case Studies"
-            subtitle="Examples of how Andes Consulting accompanies compute and infrastructure modernization projects."
-          />
-
-          <div className="mt-16 grid gap-8 lg:grid-cols-2">
-            {caseStudies.map((c, idx) => (
-              <FadeIn key={c.title} delay={idx * 0.1}>
-                <div
-                  className="relative overflow-hidden rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 to-slate-950 p-8 md:p-10 h-full"
-                >
-                  <div className="absolute top-0 right-0 -mt-4 -mr-4 h-24 w-24 rounded-full bg-emerald-500/10 blur-2xl" />
-
-                  <p className="mb-4 text-xs font-bold uppercase tracking-wider text-emerald-400">
-                    {c.industry}
-                  </p>
-                  <h3 className="mb-6 text-2xl font-bold text-white">
-                    {c.title}
-                  </h3>
-
-                  <div className="space-y-4 border-t border-slate-800 pt-6">
-                    {c.impact.map((i) => (
-                      <div key={i} className="flex gap-3">
-                        <svg className="mt-1 h-5 w-5 flex-shrink-0 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                        </svg>
-                        <p className="text-sm text-slate-300">{i}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </FadeIn>
-            ))}
-          </div>
-        </div>
-      </section>
+     
 
       {/* ABOUT + HOW WE WORK */}
       <section id="about" className="border-b border-slate-800 bg-slate-900/20 py-24">
