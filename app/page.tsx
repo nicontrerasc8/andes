@@ -100,12 +100,7 @@ export default function HomePage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
                 </svg>
               </Link>
-              <Link
-                href="/case-studies"
-                className="inline-flex items-center justify-center rounded-full border border-slate-700 bg-slate-900/50 px-8 py-3 font-medium text-slate-300 backdrop-blur-sm transition-colors hover:border-emerald-500/50 hover:text-emerald-400"
-              >
-                View BCP case study
-              </Link>
+           
             </div>
           </motion.div>
 
