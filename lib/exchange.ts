@@ -99,7 +99,7 @@ export function formatSupabaseResponse(
   return {
     from,
     to,
-    server: rows[0]?.server_name ?? "servidor propio",
+    server: "Supabase",
     exchangeRates: rows.map((row) => ({
       date: new Date(`${row.rate_date}T00:00:00.000Z`).toISOString(),
       exchangeRate: Number(row.exchange_rate),
